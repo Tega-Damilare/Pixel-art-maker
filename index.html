@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caculator</title>
+</head>
+<body>
+    <header>
+        <h1>PIXEL ART MAKER</h1>
+    </header>
+    <div id='hintDiv'>
+        <picture>
+            <source media="(min-width: 700px)"  
+            srcset="pictures/light.png">
+            <source media="(min-width: 900px)"
+            srcset="pictures/Snapshot49.jpg">
+        </picture>
+        <img src="pictures/HINT.jpg" alt="picture of a light bulb" id='light'>
+        <h2 id="hint">Hint: To play the game, enter the size of  your drawing and
+            click draw.</h2> 
+    </div>
+    <div id="setDiv">
+        <p id="set">Set drawing table:</p>
+        <div id="rowDiv">
+            <label for="row" id="rows">rows</label>
+            <input type="number" name="row" id="row" placeholder="example: 10" value="5"><br>
+        </div>
+        <div id="colDiv">
+            <label for="columns" id="cols">columns</label>
+            <input type="number" name="column" id="column" placeholder="example: 10" value="5">
+        </div>
+        <button id="draw">draw</button>
+        <div id='colourDiv'>
+            <p>
+                <h2 id="pannel">Control pannel</h2>
+                <p id="paint">Pick a colour <input type="color" name="colour" id="colour"> <br></p>
+                <button id="reset">reset grid</button>
+            </p>
+        </div>
+    </div>
+
+    <div id='tableDiv'></div>
+
+    <footer>Tiger production &copy; 2022</footer>
+
+   <script src="script.js"></script>
+</body>
+</html> 
